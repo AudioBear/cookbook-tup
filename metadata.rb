@@ -6,7 +6,7 @@ description      "Installs the tup build system"
 # long_description IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
 
 %w{ubuntu}.each do |os|
-  suppors os
+  supports os
 end
 
 %w{git apt build-essential}.each do |dep|

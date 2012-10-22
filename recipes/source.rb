@@ -1,5 +1,8 @@
 include_recipe "build-essential"
-package "libfuse-dev"
+
+%w{libfuse-dev pkg-config}.each do |pkg|
+  package pkg
+end
 
 tup_src = "/opt/tup-src"
 
