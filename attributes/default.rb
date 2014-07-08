@@ -1,1 +1,1 @@
-default[:tup][:revision] = 'v0.6'
+default[:tup][:revision] = 'v0.7.2'
