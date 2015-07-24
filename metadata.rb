@@ -1,3 +1,4 @@
+name             "tup"
 maintainer       "Zahary Karadjov"
 license          "Apache 2.0"
 version          "0.1"
@@ -15,5 +16,5 @@ end
 
 attribute "tup/version",
   :display_name => "The version of tup to install",
-  :default => "v0.6"
+  :default => "v0.7.3"
 
