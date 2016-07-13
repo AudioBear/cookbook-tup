@@ -14,7 +14,7 @@ end
 
 bash "bootstrap_install_tup" do
   cwd tup_src
-  code "./bootstrap.sh && cp ./tup /usr/local/bin/ && git rev-parse HEAD > /usr/local/share/tup-version"
+  code "git clean -fxd && ./bootstrap.sh && cp ./tup /usr/local/bin/ && git rev-parse HEAD > /usr/local/share/tup-version"
   not_if '[ -f /usr/local/share/tup-version ] && [ "$(git rev-parse HEAD)" = "$(cat /usr/local/share/tup-version)" ]', :cwd => tup_src
 end
 
